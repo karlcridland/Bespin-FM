@@ -12,7 +12,6 @@ let firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-
 let storage = firebase.storage();
 let ref = firebase.database().ref();
 
