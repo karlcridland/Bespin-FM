@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bespin FM</title>
+  </head>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link href="css/general.css" rel="stylesheet">
+
+  <body>
+    <div class="header">
+      <div class="headerTitle">Bespin FM</div>
+      <a class="headerButton" onclick="signIn()" id="account button">sign in</a>
+      <a class="headerButton" href="ask.html">ask a question</a>
+      <a class="headerButton" href="index.html" id="home button">home</a>
+    </div>
+    <div class="bodyContainer" id="body container">
+    </div>
+  <div class="signIn" id="sign in background"></div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+  <script src="javascript/firebase.js"></script>
+</html>

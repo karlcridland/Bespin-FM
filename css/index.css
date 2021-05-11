@@ -1,0 +1,40 @@
+div.socials{
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+img.frontPage{
+    width: 100%;
+    max-height: 100%;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    position: absolute;
+    object-fit: cover;
+    transition: all ease 5000ms;
+}
+div.findUs{
+    position: relative;
+    height: calc(100% - 80px);
+    background-color: whitesmoke;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+    transition: all ease 200ms;
+}
+div.findUs:hover{
+    transform: translateY(-2px);
+}
+img.icon{
+    height: 70px;
+    transition: all ease 200ms;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+}
+img.icon:hover{
+    background-color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.12) ;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/ask.html" libraries="{firebase-database}" />
+    <file url="file://$PROJECT_DIR$/index.html" libraries="{firebase}" />
+    <file url="file://$PROJECT_DIR$/javascript/Question.js" libraries="{firebase-database}" />
+    <file url="file://$PROJECT_DIR$/javascript/ask.js" libraries="{firebase-database}" />
+    <file url="file://$PROJECT_DIR$/javascript/firebase.js" libraries="{firebase-auth, firebase-database}" />
+    <file url="PROJECT" libraries="{firebase-app, firebase-storage}" />
+  </component>
+</project>

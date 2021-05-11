@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bespin FM</title>
+  </head>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link href="css/general.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <body id="body">
+    <div class="header">
+      <div class="headerTitle">Bespin FM</div>
+      <a class="headerButton" onclick="signIn()" id="account button">sign in</a>
+      <a class="headerButton" href="ask.html">ask a question</a>
+      <a class="headerButton" href="index.html" id="home button">home</a>
+    </div>
+    <div class="bodyContainer" id="body container">
+      <div >
+        <img class="frontPage" src="media/front%20page/background.png" id="background">
+        <img class="frontPage" src="media/front%20page/bespinfm.png" id="bespinfm">
+        <img class="frontPage" src="media/front%20page/foreground.png" id="foreground">
+        <img class="frontPage" src="media/front%20page/cloudcity.png" id="cloudcity">
+        <div class="socials">
+          <div class="findUs" id="follow">follow us on<br></div>
+          <div class="findUs" id="listen" style="margin-right: 0">listen to us on<br></div>
+        </div>
+      </div>
+      <div style="width: 100%; height: 100%"></div>
+    </div>
+  <div class="signIn" id="sign in background"></div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+  <script src="javascript/firebase.js"></script>
+<script>
+  function addSocials(target,socials){
+    Object.entries(socials).forEach(function ([key,value]){
+      const anchor = document.createElement('a');
+      anchor.target = '_blank';
+      anchor.href = 'https://www.'+key+'.com/'+value;
+      const icon = document.createElement('img');
+      icon.setAttribute('class','icon');
+      icon.src = 'media/socials/'+key+'.png';
+      document.getElementById(target).appendChild(anchor);
+      anchor.appendChild(icon);
+    })
+  }
+  const followUs = {'instagram':'bespinfm','twitter':'bespinfm_'};
+  const listenToUs = {'podcast.apple':'bespinfm','spotify':'bespinfm','youtube':'bespinfm'};
+  addSocials('follow',followUs);
+  addSocials('listen',listenToUs);
+
+  function flow(i){
+    let percent = [0,20][i % 2];
+    console.log(percent)
+    document.getElementById('foreground').style.transform = 'translateY('+percent+'px)';
+    document.getElementById('cloudcity').style.transform = 'translateY('+(percent)*2+'px)';
+    document.getElementById('bespinfm').style.transform = 'translateY('+percent/2+'px)';
+    window.setTimeout(function (){
+      flow(++i)
+    },6000)
+  }
+  flow(0);
+
+
+</script>
+</html>

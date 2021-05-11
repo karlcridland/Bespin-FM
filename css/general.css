@@ -1,0 +1,276 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One', sans-serif;
+    /*overflow-x: hidden;*/
+}
+div.header{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1000;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+div.headerTitle{
+    color: white;
+    padding: 20px;
+    height: 20px;
+    font-size: 1.2em;
+    float: left;
+}
+a.headerButton{
+    color: white;
+    padding: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: ease all 200ms;
+    float: right;
+    text-decoration: none;
+}
+a.headerButton:hover{
+    background-color: rgba(255,255,255,0.2);
+    color: #f8eee6;
+}
+div.bodyContainer{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+    transition: ease all 400ms;
+    background-color: #eeeeee;
+}
+div.body{
+    position: relative;
+    width: 96%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    font-family: sans-serif;
+    padding: 0;
+}
+div.signIn{
+    position: absolute;
+    left: 100%;
+    height: calc(100% - 60px);
+    top: 60px;
+    width: 300px;
+    transition: ease all 400ms;
+    overflow: hidden;
+}
+div.signInTitle{
+    text-align: center;
+    margin: 30px;
+}
+input.signIn{
+    border: solid 2px black;
+    border-radius: 6px;
+    padding: 10px 15px;
+    width: calc(100% - 74px);
+    font-size: 18px;
+    margin: 0 20px 10px;
+}
+div.signInLabel{
+    padding: 0 5px;
+    width: calc(100% - 74px);
+    font-size: 16px;
+    font-weight: 600;
+    color: #444444;
+    margin: 0 20px 10px;
+    font-family: sans-serif;
+}
+div.forgotten{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #444444;
+    transition: ease all 200ms;
+    cursor: pointer;
+    margin: 20px;
+    font-weight: 600;
+}
+div.forgotten:hover{
+    color: #ffa100;
+}
+div.signInSubmit{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    transition: ease all 200ms;
+    cursor: pointer;
+    margin: 20px 60px;
+    font-weight: 600;
+    background-color: #039be5;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
+}
+div.signInSubmit:hover{
+    background-color: #0aa3ee;
+    box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.6);
+}
+div.menuSwitch{
+    margin: 20px;
+    border: solid 2px #b0b0b0;
+    border-radius: 12px;
+    height: 40px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    background-color: #b0b0b0;
+    overflow: auto;
+    display: block;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+div.menuSwitchOption{
+    position: relative;
+    width: 50%;
+    height: 31px;
+    padding-top: 9px;
+    text-align: center;
+    float: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #aeaeae;
+    background-color: #5f5f5f;
+    font-weight: 500;
+}
+div.menuSwitchButton{
+    position: relative;
+    width: calc(50%);
+    height: 31px;
+    padding-top: 9px;
+    text-align: center;
+    float: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #039be5;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: ease all 400ms;
+    transform: translateY(-40px);
+}
+div.slideView{
+    width: 200%;
+    transition: ease all 400ms;
+}
+div.signInView{
+    overflow: auto;
+    width: 50%;
+    display: block;
+    float: left;
+    overflow-y: scroll;
+}
+div.termsField{
+    border: solid 2px rgb(232, 232, 232);
+    border-radius: 6px;
+    width: calc(100% - 44px);
+    font-size: 18px;
+    margin: 0 20px 10px;
+    min-height: 50px;
+    cursor: pointer;
+    transition: ease all 400ms;
+    margin-top: 15px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+img.termsButton{
+    position: relative;
+    border-radius: 4px;
+    height: 25px;
+    width: 25px;
+    border: solid 3px black;
+    float: left;
+    margin: 10px;
+    transition: ease all 200ms;
+
+}
+div.termsText{
+    position: relative;
+    border-radius: 4px;
+    float: right;
+    max-width: calc(100% - 70px);
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 5px;
+}
+div.termsField:hover{
+    border-color: #039be5;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
+}
+a.terms{
+    color: black;
+    text-decoration: none;
+}
+a.terms:hover{
+    color: #039be5;
+}
+div.signOut{
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: rgb(178, 34, 34);
+    font-weight: 600;
+    left: calc(50% - 90px);
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 15px 20px;
+    transition: all ease 200ms;
+}
+div.signOut:hover{
+    box-shadow: 0 2px 5px 0 rgba(93, 11, 11, 0.33);
+}
+img.profileImage{
+    position: relative;
+    margin: 30px auto 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 55px;
+    border: solid 5px #efefef;
+    background-color: #687e8a;
+    box-shadow: 1px 3px 9px 0 rgba(0, 0, 0, 0.44);
+    cursor: pointer;
+    display: block;
+    transition: ease all 300ms;
+}
+img.profileImage:hover{
+    border-color: #039be5;
+}
+div.profileName{
+    text-align: center;
+    margin: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
