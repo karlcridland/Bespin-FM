@@ -217,7 +217,6 @@ function returningUserScreen(){
     view.setAttribute('class','signInView');
 
     let inputs = {};
-
     ['email address','password'].forEach(function (text){
         const label = appendLabel(view,text,'sign in');
         inputs[text] = label;
