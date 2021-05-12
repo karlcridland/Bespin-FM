@@ -15,7 +15,6 @@ class Question{
             q.likes = snapshot.numChildren();
             displayQuestions();
         })
-
     }
 
     // Returns a div element with all features of the question including buttons to like and report, and also if the
